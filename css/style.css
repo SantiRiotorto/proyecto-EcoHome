@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;/*la etiqueta * es la que esta por sobre todas las etiquetas y al hacer esto estamos ocupando todo el espacio de la pagina sin ningun tipo de margenes*/
+ }
+
+header{
+    background-color:darkseagreen;
+    height: 80px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header ol{
+    list-style: none; /*con esto sacamos los puntos con el que se van marcando cada articulo de la lista*/
+    font-style: italic; /*cambia la forma de la letra (normal o acostada)*/
+    font-weight: bold; /*es para poner las letras en negrita*/ 
+    font-size: 14px; /*es para el tamaño de las letras - en caso de parrafos el tamaño minimo es de 14 pixeles (lo normal es 16)*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*cambia la tipografia de las letreas -arial, gotica....*/
+    text-align: end; /*sirve esto para ubicar o aliniar las palabras o parrafos en el espacio de la pagina*/
+    display: flex;
+    color: black;
+    
+}
+
+header ul li{
+    padding: 0px 12px;
+}
+
+header img{
+    width: 80px;
+}
+
+
+
+main{
+    height: 900px;
+    background-image: url(https://casasinhaus.com/wp-content/uploads/2021/10/casas-prefabricadas-valencia-fachada.jpg);
+    background-repeat: no-repeat; /*esto se hace para que la imagen no se repita en varias baldozas*/
+    background-size:cover;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between
+
+
+}
+
+
+#seccionBienvenidos{
+    background-color: brown;
+    text-align: center;
+    font-weight: bold
+
+}
+
+.tarjeta{
+    margin: 20px;
+    background-color: darkslategray;
+    padding: 10px;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction:row;
+    }
+
+.btn {
+    margin: 20px;
+    padding: 10px;
+}
+
+.tarjeta-foto img{
+    width:max-content; /*ancho, en este caso la imagen se ajusta al tamaño de la tarjeta*/
+    height: 280px;
+    border-radius: 8px; /*redondea las esquinas de la imagen*/
+}
+
+.tarjeta-bienvenida{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    width: 1100px;
+    display: flex;
+    flex-direction:column;
+}
+
+.tarjeta-bienvenida h2{
+    line-height: 3; /*esto es para cambiar la altura del renglon*/
+}
+
+.tarjeta-bienvenida button{
+    background-color: darkred; /*color de fondo*/
+    border-radius: 4px; /*borde redondeado*/
+    color: white; /*color de las letras*/
+    padding: 12px 20px; /*espacio entre el contenedor y el contenido*/
+    margin-top: 50px;
+}
+
+.contacto-aclaracion{
+    margin: 40px;
+    background-color:darkkhaki;
+    padding: 10px;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction:row;
+    border-radius: 8px;
+    }
+
+.contacto-aclaracion img{
+        width:auto; /*ancho, en este caso la imagen se ajusta al tamaño de la tarjeta*/
+        height: 300px;
+        border-radius: 8px; /*redondea las esquinas de la imagen*/
+}
+
+.aclaracion-parrafo{
+    font-style:oblique; /*cambia la forma de la letra (normal o acostada)*/
+    font-weight: bold; /*es para poner las letras en negrita*/ 
+    font-size: 14px; /*es para el tamaño de las letras - en caso de parrafos el tamaño minimo es de 14 pixeles (lo normal es 16)*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*cambia la tipografia de las letreas -arial, gotica....*/
+    text-align: end; /*sirve esto para ubicar o aliniar las palabras o parrafos en el espacio de la pagina*/
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.contacto{
+    margin: 40px;
+    border-radius: 8px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:space-between
+}
+
+
+.contacto-foto img{
+    width: 400px;; /*ancho, en este caso la imagen se ajusta al tamaño de la tarjeta*/
+    height: 280px;
+    border-radius: 8px; /*redondea las esquinas de la imagen*/
+}
+
+.tarjeta-mapa{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+}
+
+#modelos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modelosA{
+    margin: 20px;
+    background-color:aqua;
+    padding: 20px;
+    width: 650px;
+    height: 300px;
+    display: flex;
+    flex-direction:row;
+}
+
+.modelosB{
+    margin: 20px;
+    background-color:coral;
+    padding: 20px;
+    width: 650px;
+    height: 300px;
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.modelo1 img{
+    height: 300px;
+
+}
+
+#nosotros{
+    display: flex;
+    flex-direction:column;  
+}
+
+#nosotros h2{
+    background-color:darkmagenta;
+    text-align: center;
+    font-weight: bold
+}
+
+#nosotros p{
+    background-color:coral;
+    text-align: center;
+    font-weight: bold
+}
+
+.historia{
+    margin: 20px;
+    background-color:crimson;
+    padding: 20px;
+    width: 650px;
+    height: 300px;
+    display: flex;
+    flex-direction:column;
+}
+
+.historia img{
+    height: 300px;
+}
+
+#trabajos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    text-align: center;
+    color:black;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+#preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 3
+}
+
+.P{
+    background-color:darkcyan;
+    font-style: italic; /*cambia la forma de la letra (normal o acostada)*/
+    font-weight: bold; /*es para poner las letras en negrita*/ 
+    font-size: 14px; /*es para el tamaño de las letras - en caso de parrafos el tamaño minimo es de 14 pixeles (lo normal es 16)*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*cambia la tipografia de las letreas -arial, gotica....*/
+    text-align:left; /*sirve esto para ubicar o aliniar las palabras o parrafos en el espacio de la pagina*/
+}
+
+.R{
+    background-color:burlywood;
+    font-style: italic;
+    font-weight:lighter;
+    font-size: 14px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align: end;
+}
+
+footer{
+    height: 25px;
+    background-color: cornflowerblue;
+    font-style: italic; /*cambia la forma de la letra (normal o acostada)*/
+    font-weight: bold; /*es para poner las letras en negrita*/ 
+    font-size: 14px; /*es para el tamaño de las letras - en caso de parrafos el tamaño minimo es de 14 pixeles (lo normal es 16)*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*cambia la tipografia de las letreas -arial, gotica....*/
+    text-align: end; /*sirve esto para ubicar o aliniar las palabras o parrafos en el espacio de la pagina*/
+}
