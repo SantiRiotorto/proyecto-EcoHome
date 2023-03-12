@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;/*la etiqueta * es la que esta por sobre todas las etiquetas y al hacer esto estamos ocupando todo el espacio de la pagina sin ningun tipo de margenes*/
- }
+    box-sizing: border-box;
+}
 
 header{
-    background-color:darkseagreen;
+    background-color:white;
     height: 100px;
     padding: 0px 20px;
    
@@ -34,7 +35,7 @@ header img{
 
 main{
     height:auto;
-    background-image:url(https://www.xtrafondos.com/wallpapers/resized/nueva-york-por-la-manana-arte-digital-8817.jpg?s=large);
+    background-color: white;
     background-repeat: no-repeat; /*esto se hace para que la imagen no se repita en varias baldozas*/
     background-size:cover;
     display: flex;
@@ -44,105 +45,10 @@ main{
 
 }
 
-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    position: relative;
-    padding: 0 20px;
-    font-size: 18px;
-    text-transform: uppercase;
-    border: 0;
-    box-shadow: hsl(210deg 87% 36%) 0px 7px 0px 0px;
-    background-color: hsl(210deg 100% 44%);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 31ms cubic-bezier(.5, .7, .4, 1);
-   }
-   
-   button:before {
-    content: attr(alt);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    inset: 0;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 4px;
-    opacity: 1;
-   }
-   
-   button:active {
-    box-shadow: none;
-    transform: translateY(7px);
-    transition: 35ms cubic-bezier(.5, .7, .4, 1);
-   }
-   
-   button:hover:before {
-    transition: all .0s;
-    transform: translateY(100%);
-    opacity: 0;
-   }
-   
-   button i {
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    font-style: normal;
-    transition: all 2s ease;
-    transform: translateY(-20px);
-    opacity: 0;
-   }
-   
-   button:hover i {
-    transition: all .2s ease;
-    transform: translateY(0px);
-    opacity: 1;
-   }
-   
-   button:hover i:nth-child(1) {
-    transition-delay: 0.045s;
-   }
-   
-   button:hover i:nth-child(2) {
-    transition-delay: calc(0.045s * 3);
-   }
-   
-   button:hover i:nth-child(3) {
-    transition-delay: calc(0.045s * 4);
-   }
-   
-   button:hover i:nth-child(4) {
-    transition-delay: calc(0.045s * 5);
-   }
-   
-   button:hover i:nth-child(6) {
-    transition-delay: calc(0.045s * 6);
-   }
-   
-   button:hover i:nth-child(7) {
-    transition-delay: calc(0.045s * 7);
-   }
-   
-   button:hover i:nth-child(8) {
-    transition-delay: calc(0.045s * 8);
-   }
-   
-   button:hover i:nth-child(9) {
-    transition-delay: calc(0.045s * 9);
-   }
-   
-   button:hover i:nth-child(10) {
-    transition-delay: calc(0.045s * 10);
-   }
 
 
 #seccionBienvenidos{
-    background-color: brown;
+    background-color:cornflowerblue;
     text-align: center;
     font-weight: bold;
     
@@ -162,26 +68,36 @@ button {
 .trabajos{
     margin: 20px;
     padding: 0px;
-    background-color: chartreuse;
+    background-color:black;
     width: 350px;
     height: 350px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
+h4{
+    color: aliceblue;
+}
+
+h5{
+    font-weight: bold;
+
+}
 
 .trabajos img{
     width: 300px;
     height: 250px;
+    object-fit: cover;
 
 }
 
 .carousel{
     margin: 0px;
     padding: 0px;
-    width: 350px;
+    width: 300px;
     height: 350px;
     border-radius: 8px;
     display: flex;
@@ -190,12 +106,15 @@ button {
 
 }
 
+
+.articulo{
+    text-align: center;
+}
+
 .tarjeta{
     margin: 20px;
     background-color:cornflowerblue;
     padding: 10px;
-    width: 340px;
-    height: 300px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -207,8 +126,9 @@ button {
 }
 
 .tarjeta-foto img{
-    width:100; /*ancho, en este caso la imagen se ajusta al tamaño de la tarjeta*/
-    height: 100px;
+    display: block;
+    margin: 0 auto;
+    height: 190px;
     border-radius: 8px; /*redondea las esquinas de la imagen*/
 }
 
@@ -242,6 +162,7 @@ button {
     display: flex;
     flex-direction:row;
     border-radius: 8px;
+    
     }
 
 
@@ -255,6 +176,13 @@ button {
     display: flex;
     flex-direction: column;
     color: black;
+    text-align: left;
+}
+
+#contactos{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
 }
 
 .contacto{
@@ -265,7 +193,6 @@ button {
     height: 400px;
     border-radius: 8px;
     display: flex;
-    flex-direction:column-reverse;
     margin: 40px;
     border-radius: 8px;
     
@@ -287,17 +214,17 @@ button {
 
 #nosotros{
     display: flex;
-    flex-direction:column;  
+    flex-direction:column;
+    align-items: center;  
 }
 
-#nosotros h2{
-    background-color:darkmagenta;
+#nosotros h5{
+    background-color:aquamarine;
     text-align: center;
     font-weight: bold
 }
 
 #nosotros p{
-    background-color:coral;
     text-align: center;
     font-weight: bold
 }
@@ -316,6 +243,18 @@ h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
+
+.card-header2{
+    background-color: gray;
+    font-weight: bolder;
+}
+
+
+.card-header1{
+    background-color:cadetblue;
+}
+    
+
 
 
 footer{
@@ -376,21 +315,7 @@ footer{
 }
 
 @media (max-width: 768px){
-    .contacto-aclaracion{
-        margin: 20px;
-        padding: 10px;
-        width: 340px;
-        height: 400px;
-        }
-     
-    .contacto{
-        margin: 20px;
-        padding: 10px;
-        width: 340px;
-        height: 400px;    
-        
-    }
-   
+    
     .trabajos{
         margin: 10px;
         width: 340px;
@@ -409,5 +334,14 @@ footer{
         height: 280px;
         
     }
+}
+
+@media (max-width: 850px){
+    #contactos{
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+    
 }
 
